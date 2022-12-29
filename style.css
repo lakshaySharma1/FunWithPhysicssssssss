@@ -1,0 +1,461 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    /* background-image: url('https://i0.wp.com/www.csscodelab.com/wp-content/uploads/2020/03/html-gradient-background-css.png?w=993&ssl=1'); */
+    background-color: black;
+    /* background-image: url('https://i.pinimg.com/736x/23/46/4d/23464d8f0242c40820fd1c410a20db0b.jpg'); */
+    /* background-image: url('https://i.pinimg.com/736x/a1/a1/8a/a1a18a76a6ece158a39bc966c83b2faa.jpg'); */
+    background-repeat: no-repeat;
+    /* background-image: url('https://i.pinimg.com/originals/56/36/9c/56369c64e80cc98d8ab2c1dfde5ef2ce.jpg'); */
+    /* background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Black-Website-Background.jpg'); */
+    /* background-image: url('https://th.bing.com/th/id/R.f2378ba1dcc4ad79423ddf2a05c26ef0?rik=8iMIAepP5tKDog&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f58eyKEt.jpg&ehk=Zv5RYu4%2bDlNbP55AatOwoxBT6wBwYdmIzMz506xc%2blU%3d&risl=&pid=ImgRaw&r=0'); */
+    background-image: url('https://th.bing.com/th/id/OIP.eKPO9zrCBWQly1DVAAIwlAHaEK?pid=ImgDet&rs=1');
+    overflow: visible;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+}
+h1{
+    color: aliceblue;
+    font-family: 'Unbounded', cursive;
+    margin-left: 20px;
+    display: inline-block;
+    /* border: solid red; */
+}
+.img{
+    float: right;
+    margin-right: 15px;
+    /* border: solid red; */
+    border-radius: 3px;
+    margin-top: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        /* background: url('https://wallpapercave.com/wp/wp4996995.jpg'); */
+        background-image: url('https://i.pinimg.com/originals/8d/f9/ea/8df9ea0f6147c99050dd31a328925e7c.jpg');
+        color: white;
+        background-size: 100% 100%;
+        /* background-attachment: fixed; */
+    }
+}
+
+
+.nav {
+    background-color: rgba(57, 128, 100, 0.5);
+    /* border-radius: 10px; */
+    text-align: center;
+    float: top;
+
+}
+
+
+
+.nav ul {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul {
+        background-color: transparent;
+        /* display: inline-block; */
+        /* text-align: center; */
+        /* float:top; */
+
+        display: inline-table;
+
+
+    }
+}
+
+.nav ul li {
+    width: 100px;
+    margin: 0px;
+    padding: 3px;
+}
+
+.nav ul li .img {
+    border-radius: 2px;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li .img {
+        margin-right: 65px;
+    }
+
+    .nav ul li a {
+        text-align: center;
+        margin-right: 65px;
+        /* font-size: 200px; */
+
+        /* border-bottom: 1px dotted floralwhite; */
+    }
+}
+
+.nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(17, 98, 98);
+
+
+}
+
+.nav ul li:active{
+    color: aquamarine;
+}
+
+
+
+.sub {
+    display: none;
+
+}
+
+.nav ul li:hover .sub {
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+.nav ul li:hover .sub ul {
+    display: block;
+    margin: 10px;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li:hover .sub ul {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+}
+
+.nav ul li:hover .sub ul li {
+    border-bottom: 1px dotted floralwhite;
+    text-align: left;
+
+}
+
+.nav ul li:hover .sub ul li:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li:hover .sub ul li:last-child {
+        border-bottom: 1px dotted floralwhite;
+        position: static;
+    }
+}
+
+.h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Unbounded', cursive;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .h1 {
+        font-size: medium;
+        text-align: center;
+        font-family: 'Unbounded', cursive;
+        color: aliceblue;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+
+    }
+}
+
+.btn {
+    text-align: center;
+    display: inline block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Unbounded', cursive;
+    font-size: large;
+    border-radius: 50px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        /* margin-left: 45px; */
+        display: inline block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.par {
+    color: aliceblue;
+
+    border: solid aliceblue;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 50px;
+    margin-right: 65px;
+    display: inline block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    font-size: larger;
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .par {
+        display: inline block;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        border: solid aliceblue;
+        border-radius: 2px;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+}
+.tit{
+    font-family: 'Unbounded', cursive;
+    color: aquamarine;
+    padding-left: 5px;
+    text-align: center;
+    margin-top: auto;
+    font-size: larger;
+}
+.pra{
+    display: inline block;
+    font-size: larger;
+    margin-top: auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgba(0, 0, 0, 0.5); */
+        text-align: center;
+        /* border: solid aliceblue; */
+        /* border-radius: 2px; */
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        font-family: 'Unbounded', cursive;
+
+
+        color: aliceblue;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*Apply css properties to body*/
+
+/* body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: gray;
+} */
+/*Apply css properties to container class*/
+
+.container {
+	position: relative;
+	width: 1000px;
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+    float: left;
+	flex-wrap: wrap;
+	padding: 35px;
+}
+/*Apply css properties to card class*/
+
+.container .card {
+	height: 220px;
+	max-width: 200px;
+	position: relative;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	/* background: wheat; */
+    background-color: black;
+
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px black;
+	transition: 0.3s ease-in-out;
+}
+/*Apply css properties to card class when it get pointed by cursor*/
+
+.container .card:hover {
+	height: 420px;
+}
+/*Apply css properties to imgbox class*/
+
+.containe .card .imgbox {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+}
+/*Apply css properties to img tag*/
+
+.container .card .imgbox img {
+	max-width: 100%;
+    /* display: inline-flex; */
+    /* float:right; */
+	border-radius: 4px;
+}
+/*Apply css properties to content class*/
+
+.container .card .content {
+	position: relative;
+	margin-top: -100px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+/*Apply css properties to content when card gets hovered*/
+
+.container .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -10px;
+	transition-delay: 0.3s;
+}
+/* Css part completed*/
+@media screen and (max-width: 600px){
+ .container{
+    display: inline block;
+    /* justify-content: center; */
+    align-items: center;
+
+ }   
+}
+
+.containe {
+	position: relative;
+	/* width: 1000px; */
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+    /* float: left; */
+	flex-wrap: wrap;
+	padding: 35px;
+    margin-top: 50px;
+    /* margin: auto; */
+    /* margin-top: auto; */
+}
+/*Apply css properties to card class*/
+
+.containe .car {
+	height: 220px;
+	max-width: 200px;
+	position: relative;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	/* background: wheat; */
+    background-color: black;
+
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 202px black;
+	transition: 0.3s ease-in-out;
+}
+/*Apply css properties to card class when it get pointed by cursor*/
+
+.containe .car:hover {
+	height: 420px;
+}
+/*Apply css properties to imgbox class*/
+
+.containe .car .imgbo {
+	position: relative;
+	width: 260px;
+	height: 260px;
+	top: -60px;
+	left: 20px;
+}
+/*Apply css properties to img tag*/
+
+.containe .car .imgbo img {
+	max-width: 100%;
+    /* display: inline-flex; */
+    /* float:right; */
+	border-radius: 4px;
+}
+/*Apply css properties to content class*/
+
+.containe .car .conten {
+	position: relative;
+	margin-top: -100px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+/*Apply css properties to content when card gets hovered*/
+
+.containe .car:hover .conten {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -10px;
+	transition-delay: 0.3s;
+}
+.imgbo .imgbox{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 600px){
+    .containe{
+       display: inline block;
+       /* justify-content: center; */
+       align-items: center;
+   
+    }   
+   }
